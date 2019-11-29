@@ -46,6 +46,12 @@ public class LinkedList {
     public boolean addAtPosition(int d, int position){
         Node end = new Node(d);
         Node current = head;
+
+        if (position > this.listCount)
+            return false;
+        else if (position < 0)
+            return false;
+;
         int jump = 1;
         position--;
 
